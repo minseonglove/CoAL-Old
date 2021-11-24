@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="184dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/delete_alarm_box"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="알람을 삭제하시겠습니까?"
+        android:gravity="center"
+        android:layout_marginTop="44dp"
+        android:textColor="#4F4F4F"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/yes_box"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/no_box"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+</LinearLayout>

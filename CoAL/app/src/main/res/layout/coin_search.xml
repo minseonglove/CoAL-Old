@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/list_background"
+    tools:context=".WatchListFragment">
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity=""
+            android:layout_marginLeft="64dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/coin_search_btn"
+            android:textColor="#280543"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/go_setting_btn"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:contentDescription="돌아가기 버튼"
+            android:background="@android:color/transparent"
+            android:src="@drawable/right_icon_box" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/fortextbutton"
+            android:gravity="center"
+            android:text="검색 필터"
+            android:textColor="#280543"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:inputType="text"
+            android:textSize="14dp"
+            android:background="@drawable/edit_text_box"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView1"
+        android:divider="#80FFFFFF"
+        android:dividerHeight="1.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <VideoView
+        android:id="@+id/VideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/logo2" />
+
+    <ImageView
+        android:id="@+id/LogoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VideoView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coal" />
+
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:text="본 App은 알람 조건을 서버가 아닌 사용자의 디바이스를 통해\n직접 감시하기 때문에 데이터가 많이 소모될 수 있습니다.\n가급적이면 Wi-Fi 환경에서 실행해 주시길 권장드립니다."
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="#828282"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoText"
+        app:layout_constraintVertical_bias="0.700" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

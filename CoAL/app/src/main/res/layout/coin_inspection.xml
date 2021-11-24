@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/search_background"
+    tools:context=".WatchListFragment">
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity=""
+            android:layout_marginLeft="64dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/coin_inspection"
+            android:textColor="#280543"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/go_list_btn"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:contentDescription="돌아가기 버튼"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/right_icon_box" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/box_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_box"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/minutes"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/min_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    android:theme="@style/SpinnerDivideStyle"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/indicator"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/indicator_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/pon_opt2"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/pon_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/updown_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ma_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/pon_opt1"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ma_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/pon_opt1"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/ma_updown_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rsi_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/rsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/pon_opt1"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/rsi_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/padding4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rsi_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/rsi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/value"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/rsi_value"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="%"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/rsi_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rsi_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/rsi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/signal"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/rsi_value2"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/rsi_spinner2"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stoch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/stoch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/slow"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stoch_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/stoch_edit2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="%K"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/stoch_edit3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:hint="%D"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stoch_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/stoch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/value"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/stoch_value"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="%"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/stoch_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stoch_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/stoch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="%K %D 교차"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/stoch_spinner2"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="4"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/macd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/macd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="N, M"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/macd_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/macd_edit2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:hint="M"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/macd_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/macd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="@string/value"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/macd_value"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/macd_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/macd_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/signal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/fortextbutton"
+                    android:gravity="center"
+                    android:text="Signal"
+                    android:textColor="#280543"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/macd_value2"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="N"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_box"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/macd_spinner2"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_box"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btn_search_start"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/search_start_btn"
+                android:contentDescription="알람 설정 버튼"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

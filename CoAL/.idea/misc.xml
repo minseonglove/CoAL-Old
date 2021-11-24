@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.30833333333333335" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/alarm_add_btn.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/alarm_box.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/border.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/coin_list_box.xml" value="0.3411458333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/coin_search_btn_shape.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/delete_alarm_box.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/edit_text_box.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/fortextbutton.xml" value="0.3572916666666667" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/fortextview.xml" value="0.3572916666666667" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/search_start_btn.xml" value="0.3411458333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/setting_box.xml" value="0.3411458333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/spinner_box.xml" value="1.332142857142857" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/switch_background.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/switch_thumb.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/switch_track_off.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/switch_track_on.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/drawable/switch_track_selector.xml" value="0.37384615384615383" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/font/font.xml" value="0.2953703703703704" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout-v28/alert_setting.xml" value="0.5" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/activity_main.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/alert_setting.xml" value="0.40425531914893614" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/coin_inspection.xml" value="0.3265625" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/coin_search.xml" value="0.34748010610079577" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/delete_alarm_dialog.xml" value="0.5" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/inspection_result.xml" value="0.325" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/item_recycler.xml" value="0.5" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/spinner_item.xml" value="0.3411458333333333" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/watch_list.xml" value="0.33" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/layout/watch_list_item.xml" value="0.6934487021013597" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.35625" />
+        <entry key="..\:/Users/qnfpd/AndroidStudioProjects/BitAlert/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml" value="0.35625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

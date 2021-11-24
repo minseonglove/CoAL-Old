@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">CoAL</string>
+    <string name="watch_list">알람 리스트</string>
+    <string name="alert_setting">알람 생성</string>
+    <string name="coin_search_btn">종목 검색</string>
+    <string name="coin_inspection">조건 검색</string>
+    <string name="search_bar">검색 : </string>
+    <string name="minutes">차트 (분)</string>
+    <string name="indicator">감시 대상</string>
+    <string name="pon_opt1">N</string>
+    <string name="pon_opt2">가격</string>
+    <string name="updown">업다운</string>
+    <string name="signal">Signal</string>
+    <string name="message">알림내용</string>
+    <string name="submit">감시시작!</string>
+    <string name="submit2">검사시작!</string>
+    <string name="slow">Slow %K %D</string>
+    <string name="value">Value</string>
+
+    <string-array name="min_items">
+        <item>"1"</item>
+        <item>"3"</item>
+        <item>"5"</item>
+        <item>"10"</item>
+        <item>"15"</item>
+        <item>"30"</item>
+        <item>"60"</item>
+        <item>"240"</item>
+    </string-array>
+
+    <string-array name="indicator_items">
+        <item>"가격"</item>
+        <item>"이동평균선"</item>
+        <item>"RSI"</item>
+        <item>"stochastic"</item>
+        <item>"MACD"</item>
+    </string-array>
+
+    <string-array name="updown_items">
+        <item>"상승"</item>
+        <item>"하락"</item>
+    </string-array>
+
+    <string-array name="cross_items">
+        <item>"사용안함"</item>
+        <item>"골든크로스"</item>
+        <item>"데드크로스"</item>
+    </string-array>
+</resources>
