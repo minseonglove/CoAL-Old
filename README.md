@@ -4,4 +4,4 @@
 현재 더욱 요즘 앱 답게 리팩토링한 버전을 새로 만들고 있습니다!<br>
 아래의 링크를 봐주시면 감사하겠습니다!!<br>
 ↓↓↓
-<h3>https://github.com/minseonglove/CoAL-Remaster</h3>
+<h3>https://github.com/minseonglove/CoAL</h3>
